@@ -1,0 +1,124 @@
+/* section {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* span {
+    text-align: center;
+    padding: 3rem 0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+} */
+
+.services__header {
+    margin-top: 15rem;
+}
+
+.cards__container {
+    margin: 0 10px;
+    width: 20rem;
+    background: var(--color-firstly);
+    box-shadow: 0 0 15px;
+    border-radius: 10px;
+    height: max-content;
+    margin-top: 5rem;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cards__container img {
+    width: 100%;
+    height: 360px;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service__cars__image {  
+    border-radius: 0 2rem;
+    overflow: hidden;
+
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-body p {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+.card-body h2 {
+    color: var(--color-secondary);
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* .card-body button {
+    padding: 0.8rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    outline: none;
+    background: var(--color-secondary);
+    color: white;
+} */
+
+.card-body button {
+    color: var(--color-fourthly);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    background: var(--color-secondary);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+}
+
+.card-body button:hover {
+    background: var(--color-fourthly);
+    color: var(--color-gray-600);
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+
+.services__body {
+    /* background: linear-gradient(100deg, var(--color-firstly), transparent); */
+    background: linear-gradient(100deg, var(--color-firstly), transparent);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    /* .cards__container img {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    } */
+
+}
+
+
+
+
+
+
+
+

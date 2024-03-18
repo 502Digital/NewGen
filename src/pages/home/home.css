@@ -1,0 +1,485 @@
+/* Main Header CSS */
+
+.main__header {
+    width: 100vw;
+    height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: -12rem;
+}
+
+.main__header-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-top: 3rem;
+}
+
+.main__header-left {
+    margin-top: -3rem;
+}
+
+.main__header-left h4 {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+
+.main__header-left p {
+    margin: 1rem 0 3.5rem;
+    font-size: 1.2rem;
+}
+
+.main__header-right {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main__header-circle {
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(75deg, var(--color-secondary), var(--color-firstly));
+    border-radius: 50%;
+    position: absolute;
+    transition: var(--transition);
+    transition: all .2s ease-in-out; 
+}
+
+.main__header-image {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.main__header-right:hover .main__header-circle {
+    filter: blur(15px);
+    transform: scale(1.05);
+}
+
+
+/* Contact Form CSS */
+
+.contact__form {
+    margin-top: 6rem;
+}
+
+.contact__container {
+    background: var(--color-firstly);
+    /* background: linear-gradient(25deg, var(--color-firstly), var(--color-secondary)); */
+    margin-top: 6rem;
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 33rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/* Aside  Code */
+
+.contact__aside {
+    background: var(--color-secondary);
+    /* background: linear-gradient(25deg, var(--color-secondary), var(--color-firstly)); */
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.contact__aside span {
+    background: var(--color-secondary);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--color-firstly);
+    font-size: 1.5rem;
+    transition: all .2s ease-in-out; 
+}
+
+.contact__aside span:hover {
+    transform: scale(1.2);
+    background: var(--color-firstly);
+    color: var(--color-fourthly);
+}
+
+.contact__aside svg {
+    transition: all .2s ease-in-out; 
+}
+
+.contact__aside:hover svg:hover {
+    transform: scale(1.2);
+}
+
+
+.aside__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact__aside p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact__details span {
+    font-size: 1.2rem;
+}
+
+.contact__details h5 {
+    font-size: 0.85rem;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+    width: max-content;
+}
+
+/* .contact__socials span {
+    background: var(--color-secondary);
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 2rem;
+    transition: var(--transition);
+} */
+
+/* .contact__socials span:hover {
+    background: var(--color-fourthly);
+} */
+
+/* Form Contact CSS */
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: linear-gradient(100deg, var(--color-firstly), transparent);
+    /* margin-right: 4rem; */
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.form__postcodes {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+input, 
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    color: black;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
+
+/* Contact Form Media Queries */
+
+@media screen and (max-width: 1024px) {
+    /* .contact {
+        padding-bottom: 0;
+    } */
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .contact__aside {
+        width: 17.8rem;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form {
+        align-self: center;
+    }
+
+    .imageswiper {
+        width: 100%;
+        height: auto;
+    }
+    
+
+    /* .swiper-wrapper {
+        height: 0%;
+    } */
+    
+}
+
+/* Media Queries (Phones) */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 2rem;
+
+    }
+
+    /* .contact__form {
+        margin: 0 1.5rem 3rem;
+    } */
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+    .form__postcodes input[type="text"] {
+        font-size: 10px;
+    }
+
+    .imageswiper {
+        width: 100%;
+        height: 38%;
+    }
+
+    /* .imageswiper__container {
+        width: 100%;
+    } */
+}
+
+
+
+
+/* Image Swiper */
+
+.imageswiper {
+    margin-inline: auto;
+    background: linear-gradient(100deg, var(--color-firstly), transparent);
+    padding-top: 2rem;
+    /* height: 80%; */
+}
+
+.imageswiper__head {
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    height: 78%;
+}
+
+
+
+
+
+
+
+
+
+/* Values Component */
+
+.values {
+    /* background: linear-gradient(25deg, var(--color-secondary), transparent); */
+    /* background: linear-gradient(79deg, var(--color-firstly), transparent); */
+    background: linear-gradient(100deg, var(--color-firstly), transparent);
+    padding-top: 4rem;
+    /* margin-top: 2rem; */
+    padding-bottom: 1rem;   
+}
+
+.values__container {
+    display: grid;
+    grid-template-columns: 55% 33%;
+    gap: 12%;
+    margin-bottom: 4rem;
+}
+
+.values__left {
+    padding-top: 6.5rem;
+    padding-bottom: 8rem;
+}
+
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 520px; 
+    
+  }
+  
+  .each-slide-effect span {
+    color: transparent;
+  }
+
+/* .values__right > p {
+    margin: 1.5rem 0 5rem;
+} */
+
+.values__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem 2.4rem;
+}
+
+.card.values__value {
+    padding-top: 3.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.card.values__value span {
+    position: absolute;
+    top: -1.5rem;
+}
+
+
+
+
+/* Footer */
+
+.quick__contact {
+    /* background: var(--color-firstly); */
+    background: linear-gradient(54deg, var(--color-firstly), transparent);
+    /* padding-top: 2rem; */
+    padding-bottom: 2rem;
+    transition: var(--transition);
+}
+
+/* .quick__contact:hover {
+    filter: blur(0.5px);
+} */
+
+.Qcontact__container {
+    display: grid;
+    place-items: center;
+    padding-top: 5rem;
+} 
+
+.Qcontact__wrapper {
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+/* .Qcontact__wrapper a {
+    background: var(--color-primary);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+
+.Qcontact__wrapper a:hover {
+    background: transparent;
+    border-color: var(--color-gray-100);
+} */
+
+/* Media Query for Qcontact */
+@media screen  and (max-width: 600px) {
+    .Qcontact__wrapper {
+        gap: 1.5rem;
+    }
+
+    .Qcontact__wrapper a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+
+}
+
+
+
+/* Footer CSS */
+
+footer {
+    background: var(--color-fourthly);
+    margin-top: 0rem;
+    /* padding-top: 7rem; */
+    font-size: 1rem;
+    color: var(--color-firstly);
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 26rem
+    1fr 1fr 1fr;
+    gap: 6rem;
+    margin-top: 5rem;
+}
+
+.footer__container  article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.footer__container article p {
+    margin-top: 0.5rem;
+}
+
+.footer__container article h4 {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.footer__socials {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__socials a {
+    background: var(--color-fourthly);
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+/* .footer__socials a svg {
+    color: var(--color-gray-600);
+    font-size: 2rem;
+}
+
+.footer__socials a:hover {
+    border-color: var(--color-gray-100);
+    background: transparent;
+} */
+
+.footer__copyright {
+    color: var(--color-firstly);
+    text-align: center;
+    padding: 1.5rem 0;
+    /* border-top: 2px solid var(--color-primary-variant);  */
+    margin-top: 5rem;
+}
