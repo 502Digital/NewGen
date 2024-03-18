@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {BsTelephoneFill, BsFillEnvelopeFill, BsFacebook, BsLinkedin} from 'react-icons/bs'
 import {ImLocation2} from 'react-icons/im';
 import { useRef } from 'react'; 
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 
 const ContactForm = () => {
