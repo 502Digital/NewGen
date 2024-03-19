@@ -72,10 +72,6 @@ const ContactForm = () => {
               <input type="text" name="Last Name" placeholder="Last Name" required></input> 
           </div>
           <input type="email" name="Email Address" placeholder="Your Email Address" required></input>
-          {/* <div className='form__postcodes'>
-          <input type="text" name="Pickup Postcode" placeholder="Pickup Postcode" required></input>
-          <input type="text" name="Drop-off Postcode" placeholder="Drop-off Postcode" required></input>
-          </div> */}
           <textarea name="Message" rows="7" placeholder="Include any additional information such as your number or leave a short or detailed message regarding your enquiry." required></textarea>
           <button type="submit" className="btn btn-primary">Send Message</button>
       </form>
