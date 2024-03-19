@@ -43,7 +43,7 @@ const Services = () => {
     {/* <Header title='Our Services' image={HeaderImage}>
     </Header> */}
     <div className="services__header">
-    <SectionHead icon={<IoIosBuild/>} title="New Generation Energy Services"/>
+    <SectionHead icon={<IoIosBuild/>} title="NGE Services"/>
     </div>
     <div className="services__body">
     <div className='container services__container'>

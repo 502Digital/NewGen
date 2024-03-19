@@ -20,7 +20,7 @@ const About = () => {
     {/* <Header title='About Us' image={HeaderImage}>
     </Header> */}
     <div className="about__header">
-    <SectionHead icon={<IoIosBusiness/>} title="About New Generation Energy"/>
+    <SectionHead icon={<IoIosBusiness/>} title="About NGE"/>
     </div>
     <section className="about__story">
       <div className="container about__story-container">

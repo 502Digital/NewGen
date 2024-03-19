@@ -362,7 +362,7 @@ img:hover {
 
 /* Footer */
 .footer__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
 }
 
