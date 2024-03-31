@@ -40,8 +40,8 @@ const About = () => {
                   <span className="about__icon">
                   {<IoIosBuild/>}
                   </span>
-                  <h4>100+</h4>
-                  <p>Installs</p>
+                  <h4>750+</h4>
+                  <p>Installations</p>
                 </article>
 
 
