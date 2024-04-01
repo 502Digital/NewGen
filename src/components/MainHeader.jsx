@@ -8,7 +8,7 @@ const MainHeader = () => {
     <header className="main__header">
       <div className="container main__header-container">
         <div className="main__header-left">
-          <h1>Installing Bespoke Renewable Systems For Over 10 Years</h1>
+          <h1>Installing Bespoke Renewable Systems For Over 15 Years</h1>
           <p>
           Designing, supplying, installing and maintaining bespoke renewable energy systems for the past nine years with an emphasis on customer satisfaction
           and an ethos of ongoing support and maintenance for our current and future client base.
