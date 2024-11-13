@@ -22,7 +22,7 @@ const Casestudies = () => {
         >
         <div className="container imageswiper__container">
             <SectionHead icon={<AiFillCar/>} title="NGE Case Studies" className="imageswiper__head"/>
-            <Swiper
+            {/* <Swiper
                 modules={[Navigation, EffectFade, Pagination]}
                 navigation
                 pagination={{ clickable: true }}
@@ -63,7 +63,7 @@ const Casestudies = () => {
                 <SwiperSlide>
                     <img src={require("../../images/car10.jpg")} alt={"Car 10 Pic"}/>
                 </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
         </div>
         </motion.div>
     </section>
