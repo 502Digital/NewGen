@@ -7,7 +7,7 @@
     "@emailjs/browser": "^3.2.0",
     "@iconscout/unicons": "^4.0.1",
     "express": "^4.19.2",
-    "framer-motion": "^7.10.3",
+    "framer-motion": "^7.6.15",
     "react": "^16.8 || ^18",
     "react-collapsed": "^3.4.0",
     "react-dom": "^16.8 || ^18",
@@ -16,7 +16,7 @@
     "react-router": "^6.23.0",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^6.4.3",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-slideshow-image": "^4.0.5",
     "sitemap": "^7.1.1",
     "swiper": "^8.4.5",
@@ -47,11 +47,10 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.8 || ^17",
-    "react-dom": "^16.8 || ^17"
+    "react": "^16.8 || ^18",
+    "react-dom": "^16.8 || ^18"
   },
   "devDependencies": {
-    "babel": "@babel/plugin-proposal-private-property-in-object",
-    "webpack": "^4.44.2"
+    "babel": "@babel/plugin-proposal-private-property-in-object"
   }
 }
