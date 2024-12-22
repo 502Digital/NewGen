@@ -57,7 +57,7 @@ const Footer = () => {
                 <h4>Permalinks</h4>
                 <Link to="/about">About</Link>
                 <Link to="/services">Services</Link>
-                <Link to="/Casestudies">Case Studies</Link>
+                {/* <Link to="/Casestudies">Case Studies</Link> */}
                 <Link to="/Contact">Contact</Link>
             </article>
             <article>
