@@ -51,6 +51,7 @@
     "react-dom": "^16.8 || ^18"
   },
   "devDependencies": {
-    "babel": "@babel/plugin-proposal-private-property-in-object"
+    "babel": "@babel/plugin-proposal-private-property-in-object",
+    "typescript": "^4.9.5" 
   }
 }
